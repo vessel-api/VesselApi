@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://vesselapi.com">
-    <img src="assets/logo.svg" alt="VesselAPI" width="320">
+    <img src="assets/logo.svg" alt="VesselAPI" width="480">
   </a>
 </p>
 
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/vesselapi/vesselapi/issues"><img src="https://img.shields.io/github/issues/vesselapi/vesselapi" alt="GitHub Issues"></a>
+  <a href="https://github.com/vessel-api/VesselApi/issues"><img src="https://img.shields.io/github/issues/vessel-api/VesselApi" alt="GitHub Issues"></a>
   <a href="https://vesselapi.com"><img src="https://img.shields.io/badge/Website-vesselapi.com-blue" alt="Website"></a>
 </p>
 
@@ -156,11 +156,11 @@ All location and navigation endpoints also support bounding-box and radius queri
 
 Found a bug or have a feature request?
 
-- [Report a bug](https://github.com/vesselapi/vesselapi/issues/new?template=bug_report.yml)
-- [Request a feature](https://github.com/vesselapi/vesselapi/issues/new?template=feature_request.yml)
-- [Report a docs issue](https://github.com/vesselapi/vesselapi/issues/new?template=documentation.yml)
+- [Report a bug](https://github.com/vessel-api/VesselApi/issues/new?template=bug_report.yml)
+- [Request a feature](https://github.com/vessel-api/VesselApi/issues/new?template=feature_request.yml)
+- [Report a docs issue](https://github.com/vessel-api/VesselApi/issues/new?template=documentation.yml)
 
-Please search [existing issues](https://github.com/vesselapi/vesselapi/issues) before creating a new one.
+Please search [existing issues](https://github.com/vessel-api/VesselApi/issues) before creating a new one.
 
 ## Contributing
 
@@ -179,5 +179,5 @@ Found a security vulnerability? Please report it responsibly via email to securi
 
 <p align="center">
   <a href="https://vesselapi.com">vesselapi.com</a> ·
-  <a href="https://github.com/vesselapi">GitHub</a>
+  <a href="https://github.com/vessel-api">GitHub</a>
 </p>

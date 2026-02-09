@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" fill="none">
+  <rect width="480" height="120" rx="12" fill="#111827"/>
+  <text x="240" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="white" text-anchor="middle">VesselAPI</text>
+  <text x="240" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">Real-Time AIS Tracking &amp; Maritime Data API</text>
+</svg>

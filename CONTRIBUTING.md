@@ -9,11 +9,11 @@ This document explains how to contribute to VesselAPI.
 If you've found a bug in the API, please help us fix it by opening an issue.
 
 **Before submitting:**
-1. Search [existing issues](https://github.com/vesselapi/vesselapi/issues) to avoid duplicates
+1. Search [existing issues](https://github.com/vessel-api/VesselApi/issues) to avoid duplicates
 2. Make sure you're using a supported API version
 
 **When submitting:**
-1. Use the [Bug Report template](https://github.com/vesselapi/vesselapi/issues/new?template=bug_report.yml)
+1. Use the [Bug Report template](https://github.com/vessel-api/VesselApi/issues/new?template=bug_report.yml)
 2. Include the API endpoint affected
 3. Provide request details (without your API key!)
 4. Show the expected vs actual response
@@ -37,7 +37,7 @@ Have an idea for a new feature?
 2. Consider if this benefits the broader community
 
 **When submitting:**
-1. Use the [Feature Request template](https://github.com/vesselapi/vesselapi/issues/new?template=feature_request.yml)
+1. Use the [Feature Request template](https://github.com/vessel-api/VesselApi/issues/new?template=feature_request.yml)
 2. Describe the problem you're trying to solve
 3. Explain your proposed solution
 4. Mention any alternatives you've considered
@@ -46,7 +46,7 @@ Have an idea for a new feature?
 
 Found something unclear or incorrect in our docs?
 
-1. Use the [Documentation Issue template](https://github.com/vesselapi/vesselapi/issues/new?template=documentation.yml)
+1. Use the [Documentation Issue template](https://github.com/vessel-api/VesselApi/issues/new?template=documentation.yml)
 2. Link to the specific page
 3. Explain what's wrong or missing
 4. Suggest a correction if possible

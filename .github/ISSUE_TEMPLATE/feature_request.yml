@@ -9,8 +9,8 @@ body:
         We love hearing your ideas! Please describe the feature you'd like to see.
 
         **Before submitting:**
-        - Search [existing issues](https://github.com/vesselapi/vesselapi/issues?q=is%3Aissue+label%3Aenhancement) to avoid duplicates
-        - Check the [roadmap](https://github.com/vesselapi/vesselapi#roadmap) for planned features
+        - Search [existing issues](https://github.com/vessel-api/VesselApi/issues?q=is%3Aissue+label%3Aenhancement) to avoid duplicates
+        - Check existing feature requests to see if your idea has been discussed
 
   - type: textarea
     id: problem
