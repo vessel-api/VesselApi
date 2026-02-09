@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://vesselapi.com/docs"><strong>Documentation</strong></a> ·
-  <a href="https://vesselapi.com/api-explorer"><strong>API Explorer</strong></a> ·
+  <a href="https://vesselapi.com/api-reference"><strong>API Explorer</strong></a> ·
   <a href="https://dashboard.vesselapi.com"><strong>Dashboard</strong></a> ·
   <a href="https://vesselapi.com/pricing"><strong>Pricing</strong></a> ·
   <a href="mailto:support@vesselapi.com"><strong>Contact</strong></a>
