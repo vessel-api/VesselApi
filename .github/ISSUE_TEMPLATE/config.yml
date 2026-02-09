@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: API Documentation
+    url: https://vesselapi.com/docs
+    about: Check our documentation for API usage guides and references
+  - name: API Reference (Swagger)
+    url: https://vesselapi.com/api-reference
+    about: Interactive API reference with try-it-out functionality
+  - name: Account & Billing Support
+    url: mailto:support@vesselapi.com
+    about: For account, billing, or subscription questions
+  - name: Sales Inquiries
+    url: mailto:sales@vesselapi.com
+    about: For enterprise plans or custom solutions

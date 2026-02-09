@@ -1,0 +1,97 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for VesselAPI
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We love hearing your ideas! Please describe the feature you'd like to see.
+
+        **Before submitting:**
+        - Search [existing issues](https://github.com/vesselapi/vesselapi/issues?q=is%3Aissue+label%3Aenhancement) to avoid duplicates
+        - Check the [roadmap](https://github.com/vesselapi/vesselapi#roadmap) for planned features
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem would this feature solve? What are you trying to accomplish?
+      placeholder: |
+        I'm trying to...
+        Currently, I have to...
+        This is frustrating because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this to work? Be as specific as possible.
+      placeholder: |
+        I would like an endpoint that...
+        The response should include...
+        Example request:
+        ```
+        GET /v1/...
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any workarounds or alternative approaches?
+      placeholder: |
+        I tried...
+        This didn't work because...
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What type of feature is this?
+      options:
+        - New Endpoint
+        - Existing Endpoint Enhancement
+        - New Data Field
+        - Data Coverage (geographic/vessel types)
+        - Documentation
+        - SDK/Library
+        - Dashboard Feature
+        - Performance Improvement
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      description: Help us prioritize
+      options:
+        - Critical - Blocking my use case
+        - High - Would significantly improve my workflow
+        - Medium - Nice to have
+        - Low - Just an idea
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use Case
+      description: Briefly describe your use case and how this feature would help
+      placeholder: |
+        We're building a...
+        This feature would allow us to...
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to help test this feature
+        - label: I would be willing to contribute documentation for this feature

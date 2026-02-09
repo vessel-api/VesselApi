@@ -1,0 +1,118 @@
+name: Bug Report
+description: Report an issue with the VesselAPI
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below to help us investigate.
+
+        **Before submitting:**
+        - Search [existing issues](https://github.com/vesselapi/vesselapi/issues) to avoid duplicates
+        - Check the [API status page](https://status.vesselapi.com) for ongoing incidents
+        - Review the [documentation](https://vesselapi.com/docs) for correct usage
+
+  - type: input
+    id: endpoint
+    attributes:
+      label: API Endpoint
+      description: Which endpoint is affected?
+      placeholder: "e.g., /v1/search/vessels"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect to happen?
+      placeholder: |
+        What happened:
+        - ...
+
+        What I expected:
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: Request Details
+      description: |
+        Please include the request details. **Remove your API key before sharing!**
+      placeholder: |
+        curl -X GET "https://api.vesselapi.com/v1/vessels?mmsi=123456789" \
+          -H "Authorization: Bearer <REDACTED>"
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: response
+    attributes:
+      label: Response
+      description: What response did you receive?
+      render: json
+    validations:
+      required: true
+
+  - type: input
+    id: status_code
+    attributes:
+      label: HTTP Status Code
+      description: What status code was returned?
+      placeholder: "e.g., 500"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subscription
+    attributes:
+      label: Subscription Tier
+      description: What plan are you on?
+      options:
+        - Free ($0/mo)
+        - Starter ($29/mo)
+        - Growth ($99/mo)
+        - Pro ($249/mo)
+        - Unlimited ($599/mo)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does this happen?
+      options:
+        - Always (100%)
+        - Often (>50%)
+        - Sometimes (<50%)
+        - Rarely
+        - Only once
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might help us investigate?
+      placeholder: |
+        - When did this start happening?
+        - Does it affect specific vessels/ports?
+        - Any recent changes on your end?
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues for duplicates
+          required: true
+        - label: I have removed my API key from all examples
+          required: true
+        - label: I have checked the API status page
+          required: true
