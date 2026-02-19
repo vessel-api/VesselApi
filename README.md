@@ -47,6 +47,11 @@ VesselAPI provides a unified REST API for accessing real-time maritime data. Ins
 | **Port Events** | Vessel arrivals and departures at ports worldwide | All plans |
 | **Navigation Infrastructure** | DGPS stations, light aids, radio beacons, MODUs | All plans |
 | **World Port Index** | Comprehensive database of global ports | All plans |
+| **Vessel Classification** | Classification records, technical specifications | All plans |
+| **Vessel Ownership** | Ownership history and registered owners | All plans |
+| **Marine Casualties** | Casualty records and incident data | All plans |
+| **Port State Inspections** | Port state control inspection and deficiency reports | All plans |
+| **Vessel Emissions** | CO2 output, fuel consumption, energy efficiency metrics | All plans |
 
 ## Quick Start
 
@@ -116,6 +121,15 @@ vessels.forEach(v => console.log(`${v.name} - MMSI: ${v.mmsi}`));
 | Navigation | `GET /v1/search/radiobeacons` | Search radio beacons |
 | Navigation | `GET /v1/search/dgps` | Search DGPS stations |
 | Navigation | `GET /v1/search/modus` | Search offshore drilling units |
+| Vessels | `GET /v1/vessel/{id}/classification` | Get classification records |
+| Vessels | `GET /v1/vessel/{id}/ownership` | Get ownership data |
+| Vessels | `GET /v1/vessel/{id}/casualties` | Get marine casualty records |
+| Vessels | `GET /v1/vessel/{id}/inspections` | Get port state control inspections |
+| Vessels | `GET /v1/vessel/{id}/inspections/{detail_id}` | Get inspection details |
+| Vessels | `GET /v1/vessel/{id}/emissions` | Get emissions for a specific vessel |
+| Emissions | `GET /v1/emissions` | Get vessel emissions data (global) |
+| Port Events | `GET /v1/portevents/ports` | Search port events by port name |
+| Port Events | `GET /v1/portevents/vessels` | Search port events by vessel name |
 
 All location and navigation endpoints also support bounding-box and radius queries. See [full docs](https://vesselapi.com/docs).
 
@@ -123,16 +137,15 @@ All location and navigation endpoints also support bounding-box and radius queri
 
 | Plan | Price | Requests/Month |
 |------|-------|----------------|
-| **Free** | $0/mo | 500 |
-| **Starter** | $29/mo | 2,500 |
-| **Growth** | $99/mo | 15,000 |
-| **Pro** | $249/mo | 50,000 |
-| **Unlimited** | $599/mo | Unlimited |
+| **Free** | $0/mo | 1,500 |
+| **Starter** | $29/mo | 15,000 |
+| **Pro** | $149/mo | Unlimited |
+| **Enterprise** | Custom | Custom |
 
 - All paid plans include all endpoints
-- **60% off** your first month
 - **14-day** money-back guarantee
 - No long-term contracts
+- Need custom SLAs or volume terms? [Email us](mailto:sales@vesselapi.com)
 
 [View full pricing details](https://vesselapi.com/pricing)
 

@@ -8,7 +8,7 @@ We take security seriously at VesselAPI. If you discover a security vulnerabilit
 
 ### How to Report
 
-**Email:** support@vesselapi.com
+**Email:** security@vesselapi.com
 
 **Please include:**
 - Description of the vulnerability
