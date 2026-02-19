@@ -157,6 +157,23 @@ All location and navigation endpoints also support bounding-box and radius queri
 - [Error Handling](https://vesselapi.com/docs#errors)
 - [API Reference](https://vesselapi.com/api-reference)
 
+## SDKs
+
+| Language | Package | Install |
+|----------|---------|---------|
+| **Go** | [vesselapi-go](https://github.com/vessel-api/vesselapi-go) | `go get github.com/vessel-api/vesselapi-go` |
+
+```go
+client, _ := vesselapi.NewVesselClient(os.Getenv("VESSELAPI_API_KEY"))
+vessels, _ := client.Search.Vessels(ctx, &vesselapi.GetSearchVesselsParams{
+    FilterName: vesselapi.Ptr("Ever Given"),
+})
+```
+
+The Go SDK includes automatic retries with backoff, generic iterators for pagination, and typed error handling. See the [Go SDK README](https://github.com/vessel-api/vesselapi-go#readme) for full documentation.
+
+More SDKs coming soon. In the meantime, the REST API works with any HTTP client — see the [Quick Start](#quick-start) examples above.
+
 ## Community & Support
 
 ### Getting Help
