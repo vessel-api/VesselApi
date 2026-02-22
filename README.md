@@ -162,6 +162,7 @@ All location and navigation endpoints also support bounding-box and radius queri
 | Language | Package | Install |
 |----------|---------|---------|
 | **Go** | [vesselapi-go](https://github.com/vessel-api/vesselapi-go) | `go get github.com/vessel-api/vesselapi-go` |
+| **Python** | [vesselapi-python](https://github.com/vessel-api/vesselapi-python) | `pip install vessel-api-python` |
 
 ```go
 client, _ := vesselapi.NewVesselClient(os.Getenv("VESSELAPI_API_KEY"))
@@ -170,9 +171,16 @@ vessels, _ := client.Search.Vessels(ctx, &vesselapi.GetSearchVesselsParams{
 })
 ```
 
-The Go SDK includes automatic retries with backoff, generic iterators for pagination, and typed error handling. See the [Go SDK README](https://github.com/vessel-api/vesselapi-go#readme) for full documentation.
+```python
+from vessel_api_python import VesselClient
 
-More SDKs coming soon. In the meantime, the REST API works with any HTTP client — see the [Quick Start](#quick-start) examples above.
+client = VesselClient(api_key="your-api-key")
+result = client.search.vessels(filter_name="Ever Given")
+for v in result.vessels or []:
+    print(f"{v.name} (IMO {v.imo})")
+```
+
+Both SDKs include automatic retries with backoff, iterators for pagination, and typed error handling. See the [Go SDK README](https://github.com/vessel-api/vesselapi-go#readme) and [Python SDK README](https://github.com/vessel-api/vesselapi-python#readme) for full documentation.
 
 ## Community & Support
 
