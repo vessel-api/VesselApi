@@ -163,6 +163,7 @@ All location and navigation endpoints also support bounding-box and radius queri
 |----------|---------|---------|
 | **Go** | [vesselapi-go](https://github.com/vessel-api/vesselapi-go) | `go get github.com/vessel-api/vesselapi-go` |
 | **Python** | [vesselapi-python](https://github.com/vessel-api/vesselapi-python) | `pip install vessel-api-python` |
+| **TypeScript** | [vesselapi-ts](https://github.com/vessel-api/vesselapi-ts) | `npm install vesselapi` |
 
 ```go
 client, _ := vesselapi.NewVesselClient(os.Getenv("VESSELAPI_API_KEY"))
@@ -180,7 +181,17 @@ for v in result.vessels or []:
     print(f"{v.name} (IMO {v.imo})")
 ```
 
-Both SDKs include automatic retries with backoff, iterators for pagination, and typed error handling. See the [Go SDK README](https://github.com/vessel-api/vesselapi-go#readme) and [Python SDK README](https://github.com/vessel-api/vesselapi-python#readme) for full documentation.
+```typescript
+import { VesselClient } from "vesselapi";
+
+const client = new VesselClient("your-api-key");
+const { vessels } = await client.search.vessels({ filterName: "Ever Given" });
+for (const v of vessels ?? []) {
+  console.log(`${v.name} (IMO ${v.imo})`);
+}
+```
+
+All SDKs include automatic retries with backoff, iterators for pagination, and typed error handling. See the [Go SDK README](https://github.com/vessel-api/vesselapi-go#readme), [Python SDK README](https://github.com/vessel-api/vesselapi-python#readme), and [TypeScript SDK README](https://github.com/vessel-api/vesselapi-ts#readme) for full documentation.
 
 ## Community & Support
 
